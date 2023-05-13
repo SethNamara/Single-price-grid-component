@@ -2,7 +2,7 @@
 
 Check out my solution at https://sethnamara.github.io/Single-price-grid-component/
 
-This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc).
+![desktop-preview](https://github.com/SethNamara/Single-price-grid-component/assets/106119806/4cd910b6-aaa1-4d93-acbb-6e970b10a392)
 
 ## Table of contents
 
