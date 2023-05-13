@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* Variables for reuse and easy application and general styling */
+
+:root {
+
+    --clr-background: hsl(204, 43%, 93%);
+
+    --clr-primary-100: hsl(179, 62%, 43%);
+    --clr-primary-200: hsl(179, 49%, 61%);
+    --clr-primary-300: #f8f8f8;
+
+    --clr-secondary-100: hsl(71, 73%, 54%);
+    --clr-secondary-200: hsl(179, 49%, 61%);
+
+    --clr-accent-100: hsl(179, 62%, 43%);
+    --clr-accent-200: hsl(71, 73%, 54%);
+    --clr-accent-300: hsl(218, 22%, 67%);
+    --clr-accent-400: #faf3f3;
+ 
+
+    --font-family: 'Karla', sans-serif;
+
+    --fs-100: 1rem;
+    --fs-150: 1.063rem;
+    --fs-200: 1.125rem;
+    --fs-300: 1.25rem;
+    --fs-400: 1.5rem;
+    --fs-500: 2rem;
+
+    --fw-body: 400;
+    --fw-heading: 700;
+
+}
+
+
+/* Default styling */
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* General styling */
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--clr-background);
+}
+
+.container {
+    padding-top: 3rem;
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    /* box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.1); */
+    --border-radius: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.content {
+    background-color: var(--clr-primary-300);
+    border-radius: 1rem;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    padding: 2rem;
+}
+
+.title {
+    color: var(--clr-accent-100);
+    font-weight: var(--fw-heading);
+    font-size: var(--fs-200);
+}
+
+.sub__title {
+    color: var(--clr-accent-400);
+    font-weight: var(--fw-heading);
+    font-size: var(--fs-150);
+}
+
+.sub__title-style {
+    color: var(--clr-accent-200);
+    padding: 1rem 0;
+}
+
+.info {
+    color: var(--clr-accent-400);
+    line-height: 1.4;
+    font-size: var(--fs-100);
+    font-weight: var(--fw-body);
+}
+
+.info__style {
+    color: var(--clr-accent-300);
+}
+
+.grid__left {
+    background-color: var(--clr-primary-100);
+    padding: 2rem;
+}
+
+.left__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price {
+    color: var(--clr-accent-400);
+    opacity: .9;
+    font-size: var(--fs-100);
+    font-weight: var(--fw-body);
+    padding: 1.5rem 0;
+}
+
+.left {
+    color: var(--clr-accent-400);
+    font-weight: var(--fw-heading);
+    font-size: var(--fs-500);
+    display: flex;
+}
+
+.right {
+    font-size: var(--fs-100);
+    padding-left: .5rem;
+    align-self: center;
+}
+
+.button {
+    background-color: var(--clr-secondary-100);
+    border: none;
+    border-radius: 5px;
+    padding: .8rem 1.5rem;
+    color: var(--clr-accent-400);
+    font-weight: var(--fw-heading);
+    cursor: pointer;
+    font-family: var(--font-family);
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: var(--clr-secondary-200);
+}
+
+.grid__right {
+    background-color: var(--clr-primary-200);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    padding: 2rem;
+}
+
+.right__info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-content: space-between;
+}
+
+.list {
+    padding: .5rem 0;
+}
+
+
+@media (min-width:670px) {
+    .container {
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "content content"  "grid__left grid__right";
+        justify-content: center;
+        align-content: center;
+        padding-top: 0;
+    }
+
+    .content {
+        grid-area: content;
+    }
+
+    .left__content {
+        display: flex;
+        height: 100%;
+    }
+
+    .grid__left {
+        grid-area: grid__left;
+        border-radius: 0 0 0 var(--border-radius);
+    }
+
+    .grid__right {
+        grid-area: grid__right;
+        border-radius: 0 0 var(--border-radius) 0;
+    }
+    
+}
+
+@media (min-width: 670px) and (max-width: 950px) {
+    .container {
+        width: 70%;
+    }
+}
