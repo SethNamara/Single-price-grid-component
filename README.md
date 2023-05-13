@@ -2,7 +2,8 @@
 
 Check out my solution at https://sethnamara.github.io/Single-price-grid-component/
 
-![desktop-preview](https://github.com/SethNamara/Single-price-grid-component/assets/106119806/4cd910b6-aaa1-4d93-acbb-6e970b10a392)
+# output 
+![desktop-preview](https://github.com/SethNamara/Single-price-grid-component/assets/106119806/2ea6b9f0-c18f-467b-8581-6af44eff93fa)
 
 ## Table of contents
 
@@ -22,11 +23,6 @@ Users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
 - See a hover state on desktop for the Sign Up call-to-action
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
